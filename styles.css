@@ -1,0 +1,294 @@
+/* モバイルファーストのスタイル */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --background-color: #f8f9fa;
+    --text-color: #2c3e50;
+    --card-background: #ffffff;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+}
+
+/* モバイルデバイス用の基本設定 */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* モバイル用のヘッダー */
+h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* モバイル用のフォームスタイル */
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* 削除・共有ボタンのスタイル修正 */
+.btn-group {
+    display: flex;
+    gap: 8px;
+    justify-content: center !important;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+/* .btn-group:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.memo-item {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-control, .form-select {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: var(--spacing-md);
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    outline: none;
+}
+
+/* モバイル用のカードスタイル */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing-md);
+    background-color: var(--card-background);
+}
+
+.card-body {
+    padding: var(--spacing-lg);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    font-size: 1.2rem;
+}
+
+.card-text {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.card-text strong {
+    color: var(--primary-color);
+    display: block;
+    margin: var(--spacing-sm) 0;
+    font-size: 1rem;
+}
+
+.card-text small {
+    color: #666;
+    display: block;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* 各階の詳細表示 */
+.floor-details {
+    margin: var(--spacing-md) 0;
+}
+
+.floor-item {
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-md);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.floor-item strong {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+    display: block;
+}
+
+.floor-item small {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    color: #555;
+}
+
+/* モバイル用のボタンスタイル */
+.form-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.save-button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.save-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+/* メモリストのスタイル */
+#memoList {
+    margin-top: var(--spacing-xl);
+}
+
+#memoList h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* テキストエリアのスタイル */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    padding: var(--spacing-md);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ドロップダウンメニューのスタイル */
+.form-select {
+    padding: var(--spacing-md) var(--spacing-xl) var(--spacing-md) var(--spacing-md);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666'%3E%3Cpath d='M15.3 9.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right var(--spacing-md) center;
+    background-size: 20px;
+}
+
+/* タブレット以上の画面サイズ */
+@media (min-width: 768px) {
+    .container {
+        max-width: 800px;
+    }
+
+    .form-group {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .form-control, .form-select {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .card-body {
+        padding: var(--spacing-xl);
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .card-text strong {
+        font-size: 1.1rem;
+    }
+
+    .card-text small {
+        font-size: 0.9rem;
+    }
+
+    .save-button {
+        padding: var(--spacing-xl) var(--spacing-xl);
+        font-size: 1.1rem;
+    }
+}
+
+/* デスクトップ画面 */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .form-group {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .card {
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .card-body {
+        padding: var(--spacing-xl);
+    }
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out;
+}
