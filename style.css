@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.4;
+    box-sizing: border-box;
+    resize: vertical;
+    margin: 0;
+    vertical-align: top;
+}
+
+/* 施設名のスタイル */
+#facilityName {
+    width: 100%;
+    height: 40px;
+    padding: 0.4rem 0.8rem;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 200px;
+    margin: 1rem auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#memoList {
+    margin-top: 2rem;
+    border-top: 2px solid #eee;
+    padding-top: 2rem;
+}
+
+.memo-item {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.memo-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.edit-btn, .delete-btn, .share-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.edit-btn {
+    background-color: #28a745; /* 緑色 - 編集 */
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #dc3545; /* 赤色 - 削除 */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.share-btn {
+    background-color: #007bff; /* 青色 - 共有 */
+    color: white;
+}
+
+.share-btn:hover {
+    background-color: #0056b3;
+}
+
+.edit-btn:hover {
+    background-color: #5a6268;
+}
+
+.delete-btn:hover {
+    background-color: #dc3545;
+}
+
+.share-btn:hover {
+    background-color: #007bff;
+}
+
+.memo-item h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.memo-item p {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
